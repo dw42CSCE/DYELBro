@@ -1,0 +1,36 @@
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  
+}
+
+app-root {
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(0, 51, 101);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(173, 239, 209);
+  background-color: rgb(0, 32, 63);
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 10px;
+  width: 100px;
+  text-align: center;
+}
+
+a:hover {
+  background-color: rgb(71, 148, 226);
+  color: rgb(0, 0, 0);
+}

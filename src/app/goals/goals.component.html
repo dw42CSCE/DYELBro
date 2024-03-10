@@ -1,0 +1,28 @@
+<div class="goalsBubble">
+    <p>What type of goal would you like to set? 
+        <select [(ngModel)]="selectedValue" (ngModelChange)="toggleButtonVisibility()">
+            <option value="default">Choose Here</option>
+            <option value="A">Body Weight Goal</option>
+            <option value="B">PR Goal</option>
+            <option value="C">Endurance Goal</option>
+            <option value="D">Other Goal</option>
+        </select>
+    </p>
+
+    <div id="buttonsDivA" *ngIf="buttonAVisible">
+        <p>A</p>
+        <button id="addGoal">Add Goal</button>
+    </div>
+    <div id="buttonsDivB" *ngIf="buttonBVisible">
+        <p>B</p>
+        <button id="addGoal">Add Goal</button>
+    </div>
+    <div id="buttonsDivC" *ngIf="buttonCVisible">
+        <p>C</p>
+        <button id="addGoal">Add Goal</button>
+    </div>
+    <div id="buttonsDivD" *ngIf="buttonDVisible">
+        <p>D</p>
+        <button id="addGoal">Add Goal</button>
+    </div>
+</div>

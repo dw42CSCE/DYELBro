@@ -1,0 +1,27 @@
+<div class="calcBubble">
+  
+    <p>Enter your last full effort weight and reps</p>
+    
+    <form #myForm="ngForm">
+      <label class = "inputLine">Weight:<input 
+        type="text" 
+        [(ngModel)]="weight" 
+        name="weight" 
+        required /></label>
+      <label class = "inputLine">Reps:<input 
+        type="text" 
+        [(ngModel)]="reps" 
+        name="reps" 
+        required /></label>
+      <button 
+        class = "inputButton" 
+        (click)="calcWeight()" 
+        [disabled]="!myForm.form.valid">Calculate</button>
+    </form>
+    
+    <p>You should try:</p>
+  
+    <p class = "val">{{ val }}</p>
+  
+    <p id = "safety">Be careful when attempting max's alone! Always use appropriate safety equipment and precautions when working out, especially when attempting PR's. Good luck with your next max out!</p>
+  </div>

@@ -1,0 +1,51 @@
+Nav-Bar {
+    width: 100%;
+    background-color: #003365;
+}
+
+.test {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 51, 101);
+  color: white;
+  border-radius: 20px;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 30px;
+}
+
+
+  .test p {
+    margin: 10px;
+  }
+  
+  .test input {
+    margin: 10px;
+  }
+  
+  .test button {
+    margin: 10px;
+  }
+
+.inputLine{
+  display: block;
+  justify-items: center;
+}
+
+.inputButton {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+#safety {
+  text-align: center;
+}
+
+.val{
+  font-size: 24px;
+}

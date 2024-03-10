@@ -1,0 +1,25 @@
+<div class="nav-bar">
+  <ul>
+    <a routerLink="/calculator"><li class="Button"><p>Max Calculator</p></li></a>
+    <a routerLink="/goals"><li class="Button"><p>Set Goals</p></li></a>
+    <a routerLink="/give-feedback"><li class="Button"><p>Give Feedback</p></li></a>
+  </ul>
+</div>
+
+<router-outlet></router-outlet>
+
+<div id="botContainer">
+  <script type="text/javascript">
+    (function(d, t) {
+        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        v.onload = function() {
+          window.voiceflow.chat.load({
+            verify: { projectID: '65dd0c47c24a01a879ff6910' },
+            url: 'https://general-runtime.voiceflow.com',
+            versionID: 'production'
+          });
+        }
+        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+    })(document, 'script');
+  </script>
+</div>
