@@ -47,5 +47,6 @@ export class CalculatorComponent {
           alert("Reps shouldnt be above 15")
         }
       }
+      this.val = Math.round(this.val);
     }
 }
