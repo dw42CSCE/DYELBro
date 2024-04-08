@@ -45,3 +45,9 @@
     font-size: 24px;
   }
   
+  @media screen and (max-width: 600px) {
+    .calcBubble{
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  }
