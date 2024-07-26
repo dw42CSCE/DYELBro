@@ -1,0 +1,12 @@
+<div class="contentBubble">
+    <div class="form" *ngIf="showLogin">
+        <p>Login Form</p>
+        <button class="switch" (click)="turnonSignUp()">Go to Sign Up</button>
+      </div>
+      
+      <div class="form" *ngIf="showSignUp">
+        <p>Sign Up Form</p>
+        <button class="switch" (click)="turnonLogin()">Go to Login</button>
+      </div>
+</div>
+

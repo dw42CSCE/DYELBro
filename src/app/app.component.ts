@@ -3,20 +3,37 @@ import { RouterModule, RouterOutlet } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { Component, OnInit, OnDestroy, Renderer2 } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { LoginComponent } from './login/login.component';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  imports: [FormsModule, RouterOutlet, RouterModule],
+  imports: [FormsModule, RouterOutlet, RouterModule, NgIf],
   standalone: true,
 })
 
 export class AppComponent implements OnInit {
   safeHtmlContent: SafeHtml = "";
   botInitialized: boolean = false;
+  showNavbar: boolean = true;
+  showSignIn: boolean = true;
 
   constructor(private sanitizer: DomSanitizer, private renderer: Renderer2) { }
+
+
+  onActivate(event: any) {
+    // Check if the activated component is the subcomponent
+    if (event instanceof LoginComponent) {
+      this.showNavbar = false;
+      this.showSignIn = false;
+    } else {
+      this.showNavbar = true;
+      this.showSignIn = true;
+
+    }
+  }
 
   ngOnInit(): void {
     // Example HTML content to be sanitized

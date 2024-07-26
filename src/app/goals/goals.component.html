@@ -1,5 +1,7 @@
 <div class="goalsBubble">
-    <p>What type of goal would you like to set? 
+
+    <p *ngIf="!hasGoals">You gave no goals set!</p>
+    <p *ngIf="!hasGoals">What type of goal would you like to set? 
         <select [(ngModel)]="selectedValue" (ngModelChange)="toggleButtonVisibility()">
             <option value="default">Choose Here</option>
             <option value="A">Body Weight Goal</option>

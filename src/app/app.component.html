@@ -1,13 +1,15 @@
 <div class="nav-bar">
-  <H2 id="title">Do You Even Lift Bro?</H2>
-  <ul>
+  <h2 id="title" routerLink="/calculator">Do You Even Lift Bro?</h2>
+  <ul *ngIf="showNavbar">
     <a routerLink="/calculator"><li class="Button"><p>Calculate Max</p></li></a>
     <a routerLink="/calculator" id="Logo"><li class="Button"><p>Logo Goes Here</p></li></a>
     <a routerLink="/goals"><li class="Button"><p>Set<br> Goals</p></li></a>
   </ul>
 </div>
 
-<router-outlet></router-outlet>
+<router-outlet (activate)="onActivate($event)"></router-outlet>
+
+<a *ngIf="showSignIn" routerLink="/login" id="signin"><p id="signintxt">Sign In</p></a>
 
 <div id="botContainer">
   <script type="text/javascript">
@@ -21,6 +23,6 @@
           });
         }
         v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-    })(document, 'script');
+    })('script');
   </script>
 </div>

@@ -16,6 +16,9 @@ export class GoalsComponent {
   buttonBVisible: boolean = false;
   buttonCVisible: boolean = false;
   buttonDVisible: boolean = false;
+  hasGoals: boolean = false;
+
+  //NEED TO ADD ARRAY OF GOALS, NEED GOALS CLASS WITH ATTRIBUTES
 
   toggleButtonVisibility(): void {
     this.buttonAVisible = false;

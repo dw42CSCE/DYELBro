@@ -5,10 +5,30 @@
   background-color: #003365;
 }
 
+#signin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: unset;
+  text-decoration: none;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#signintxt {
+  background-color: #003365;
+  padding: 5px 10px;
+  text-align: center;
+  color: white;
+  border-radius: 4px;
+}
+
 #title {
   color: white;
   text-align: center;
   padding: 10px;
+  cursor: pointer;
 }
 
 ul {
