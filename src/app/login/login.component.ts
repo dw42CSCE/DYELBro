@@ -9,6 +9,7 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
+
 export class LoginComponent {
   showLogin:boolean = true;
   showSignUp:boolean = false;

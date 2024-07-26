@@ -1,16 +1,16 @@
-import { FormsModule } from '@angular/forms';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { Component, OnInit, OnDestroy, Renderer2 } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { LoginComponent } from './login/login.component';
 import { NgIf } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  imports: [FormsModule, RouterOutlet, RouterModule, NgIf],
+  imports: [ FormsModule, RouterOutlet, RouterModule, NgIf ],
   standalone: true,
 })
 
