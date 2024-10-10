@@ -1,0 +1,8 @@
+{
+  "routes": [
+    "/calculator",
+    "/dyelbot",
+    "/goals",
+    "/login"
+  ]
+}
