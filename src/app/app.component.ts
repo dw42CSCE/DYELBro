@@ -6,6 +6,7 @@ import { LoginComponent } from './login/login.component';
 import { NgIf } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
